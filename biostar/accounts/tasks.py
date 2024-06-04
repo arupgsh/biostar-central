@@ -85,7 +85,7 @@ def verification_email(user_id):
 
     user = models.User.objects.filter(id=user_id).first()
 
-    auth.send_verification_email(user=user)
+    #auth.send_verification_email(user=user)
     return
 
 

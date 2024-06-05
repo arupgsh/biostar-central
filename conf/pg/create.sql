@@ -1,0 +1,3 @@
+CREATE USER tester WITH PASSWORD 'tester';
+GRANT ALL PRIVILEGES ON DATABASE biostardb TO tester;
+

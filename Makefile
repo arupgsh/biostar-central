@@ -79,6 +79,13 @@ forum:
 	$(eval WSGI_FILE := biostar/forum/wsgi.py)
 	$(eval TEST:=biostar.forum)
 
+pg:
+	@echo "*** Setting variables for local app."
+	$(eval DJANGO_SETTINGS_MODULE := conf.pg.settings)
+	$(eval DJANGO_APP := biostar.forum)
+	$(eval LOAD_COMMAND := populate)
+
+
 biostar: forum
 	$(eval TARGET := biostar)
 

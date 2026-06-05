@@ -238,7 +238,7 @@ def spam_check(value, target, user):
         r'^https?://[^\s/$.?#].[^\s]*$',
         re.IGNORECASE
     )
-    url_only = bool(URL_PATTERN.fullmatch(value))
+    url_only = bool(URL_PATTERN.fullmatch(content))
     if url_only:
         suspend_user(user)
 
